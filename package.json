@@ -1,23 +1,28 @@
 {
-  "name": "HBU Week1",
+  "name": "hbu_week_1",
   "version": "1.0.0",
-  "description": "HBU Week 1",
+  "description": "HBU week one Assignment",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yusadolat/HBUweek-1.git"
-  },
-  "author": "Yusadolat",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yusadolat/HBUweek-1.git/issues"
-  },
-  "homepage": "https://github.com/yusadolat/HBUweek-1.git#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yusadolat/HBUweek-1.git"
+  },
+  "keywords": [
+    "HBU"
+  ],
+  "author": "Yusadolat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yusadolat/HBUweek-1/issues"
+  },
+  "homepage": "https://github.com/Yusadolat/HBUweek-1#readme"
 }
