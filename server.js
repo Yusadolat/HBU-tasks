@@ -1,17 +1,17 @@
-// grab the packages we need
+// getting express and body parser
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var port = process.env.PORT || 8200;
 
-// write the get method
+// get method
 app.get('/', function (req, res) {
     res.status(200).json({
         status: 'success'
     });
 });
 
-// write the post method
+// post method
 app.use(bodyParser.urlencoded({ extended: false }));
 app.post('/data', (req, res) => {
   var result = {'data': req.body}
