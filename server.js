@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 8200;
 
 
-// keeping middle before app.get()
+// keeping middleware before any route i.e app.get()
 app.use(bodyParser.urlencoded({ extended: false }));
 
 
