@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 8200;
 
 // get method
-app.get('/', function (req, res) {
+app.get('/',  (req, res) => {
     res.status(200).json({
         status: 'success'
     });
