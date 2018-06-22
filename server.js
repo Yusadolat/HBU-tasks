@@ -1,8 +1,8 @@
-// getting express and body parser
-var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
-var port = process.env.PORT || 8200;
+// getting express and body parser :smile:
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = process.env.PORT || 8200;
 
 // get method
 app.get('/', function (req, res) {
