@@ -4,6 +4,11 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 8200;
 
+
+// keeping middle before app.get()
+app.use(bodyParser.urlencoded({ extended: false }));
+
+
 // get method
 app.get('/',  (req, res) => {
     res.status(200).json({
@@ -12,9 +17,8 @@ app.get('/',  (req, res) => {
 });
 
 // post method
-app.use(bodyParser.urlencoded({ extended: false }));
 app.post('/data', (req, res) => {
-  var result = {'data': req.body}
+  let result = {'data': req.body}
   res.send(result)
 });
 
