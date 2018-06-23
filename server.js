@@ -18,7 +18,7 @@ app.get('/',  (req, res) => {
 
 // post method
 app.post('/data', (req, res) => {
-  let result = {'data': req.body}
+  const result = {'data': req.body}
   res.send(result)
 });
 
