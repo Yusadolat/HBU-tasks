@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 //const sequelize = new Sequelize('database', 'username', 'password'
-const sequelize = new Sequelize('users', 'yusuf', 'yusuf', {
+const sequelize = new Sequelize('users', 'yusuf', '1234567', {
     dialect: 'postgres',
     operatorsAliases: false,
     pool: {
@@ -12,5 +12,6 @@ const sequelize = new Sequelize('users', 'yusuf', 'yusuf', {
     }
 });
 
+sequelize.sync()
 
 module.exports = sequelize;

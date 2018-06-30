@@ -6,6 +6,8 @@ const passport = require('passport');
 
 const User = require('../schema/User')
 
+//POST API
+
 router.post('/signup', (req, res) => {
     const newUser = {
         email: req.body.email,
@@ -34,6 +36,7 @@ router.post('/signup', (req, res) => {
     .catch(err => console.log(err));
 });
 
+// LOGIN API 
 router.post('/login', (req, res) => {
     const logUser = {
         email: req.body.email,
