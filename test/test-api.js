@@ -8,7 +8,7 @@ const should = chai.should();
 chai.use(chaiHttp);
 
 describe('data', () => {
-
+// test for GET data, should return "Succes" 
     describe('/GET data', () => {
         it('should get all data', (done) => {
             chai.request(server)

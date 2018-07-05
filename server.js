@@ -23,6 +23,6 @@ app.post('/data', (req, res) => {
 });
 
 // start the server
-app.listen(port);
+module.exports = app.listen(port);
 console.log('Server started! At http://localhost:' + port);
 
