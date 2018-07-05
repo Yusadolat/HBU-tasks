@@ -33,8 +33,7 @@ router.post('/signup', (req, res) => {
             return res.status(400).json({msg: 'User already exists.'})
         }
     })
-    .catch(err => console.log(err));
-});
+     .catch(err => res.status(400).json(err)); });
 
 // LOGIN API 
 router.post('/login', (req, res) => {
