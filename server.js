@@ -18,11 +18,11 @@ app.get('/',  (req, res) => {
 
 // post method
 app.post('/data', (req, res) => {
-  const result = {'data': req.body}
+  const result = {'data': 'Any String'}
   res.send(result)
 });
 
 // start the server
-app.listen(port);
+module.exports = app.listen(port);
 console.log('Server started! At http://localhost:' + port);
 
